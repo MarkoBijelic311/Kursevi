@@ -1,0 +1,210 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="form">
+
+    <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Registruj se</a></li>
+        <li class="tab"><a href="#login">Uloguj se</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="signup">
+            <h1 class="naslov1">Napravi nalog</h1>
+
+            <form action="/" method="post">
+
+                <div class="top-row">
+                    <div class="field-wrap">
+                        <label>
+                            Ime<span class="req">*</span>
+                        </label>
+                        <input type="text" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Prezime<span class="req">*</span>
+                        </label>
+                        <input type="text" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Email <span class="req">*</span>
+                    </label>
+                    <input type="email" required autocomplete="off" />
+                </div>
+                <div class="field-wrap dugmad" style=" display: flex; align-items: center;">
+                    <label>
+                        Student?<span class="req">*</span>
+                    </label>
+                    <div class="dugmad">
+                        <input type="radio" name="da" id="da"> <p class="odg"> Da </p>
+                        <input type="radio" name="da" id="ne"><p class="odg">Ne</p>
+                    </div>
+                </div>
+                <div class="field-wrap dugmad" style=" display: flex; align-items: center;">
+                    <label>
+                        Zaposlen/a?<span class="req">*</span>
+                    </label>
+                    <div class="dugmad">
+                        <input type="radio" name="da" id="da"> <p class="odg"> Da </p>
+                        <input type="radio" name="da" id="ne"><p class="odg">Ne</p>
+                    </div>
+                </div>
+
+
+
+                <div class="field-wrap">
+                    <label>
+                        Postavi lozinku<span class="req">*</span>
+                    </label>
+                    <input type="password" required autocomplete="off" />
+                </div>
+
+                <button type="submit" class="button button-block" />Uloguj se</button>
+
+            </form>
+
+        </div>
+
+        <div id="login">
+            <h1 class="naslov1">Dobrodošli nazad!</h1>
+
+            <form action="/" method="post">
+
+                <div class="field-wrap">
+                    <label>
+                        Email <span class="req">*</span>
+                    </label>
+                    <input type="email" required autocomplete="off" />
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Lozinka<span class="req">*</span>
+                    </label>
+                    <input type="password" required autocomplete="off" />
+                </div>
+
+
+
+                <button class="button button-block" />Uloguj se</button>
+
+            </form>
+
+        </div>
+
+    </div><!-- tab-content -->
+
+</div> <!-- /form -->
+
+
+<section class="team_section layout_padding">
+    <div class="container-fluid">
+        <div class="heading_container heading_center">
+            <h2 class="">
+                Naši <span> mentori </span>
+            </h2>
+        </div>
+
+        <div class="team_container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="~/images/Marko.webp" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Marko
+                            </h5>
+                            <p>
+                                Fullstack developer
+                            </p>
+                        </div>
+                        <div class="social_box">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="~/images/Anđela.jpeg" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Anđela
+                            </h5>
+                            <p>
+                                Marketing Head
+                            </p>
+                        </div>
+                        <div class="social_box">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="~/images/Lea.webp" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Lea
+                            </h5>
+                            <p>
+                                Marketing Head
+                            </p>
+                        </div>
+                        <div class="social_box">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

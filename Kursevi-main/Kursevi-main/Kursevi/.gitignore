@@ -1,0 +1,30 @@
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Package files
+packages/
+node_modules/
+
+# Logs
+*.log
+
+# Publish outputs
+publish/
+
+# Configuration files with sensitive data
+appsettings.json
+appsettings.*.json
