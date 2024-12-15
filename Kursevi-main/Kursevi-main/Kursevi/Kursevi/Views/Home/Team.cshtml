@@ -1,0 +1,150 @@
+﻿@model Kursevi.Models.Class
+
+<div class="container">
+
+    <h1 class="brand"><span>ANMALE kursevi</span></h1>
+
+    <div class="wrapper">
+
+        <div class="company-info">
+            <h3>ANMALE kursevi</h3>
+
+            <ul>
+                <li style=" list-style: none; padding-bottom: 4rem;"><img src="~/images/logo-removebg.png" alt="" style="width: 80%;"></li>
+            <li><i class="fa fa-road"></i> Novi Sad</li>
+            <li><i class="fa fa-phone"></i> +021 0000000</li>
+            <li><i class="fa fa-envelope"></i> anmale@gmail.com</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Kontaktirajte nas</h3>
+
+            @using (Html.BeginForm("Contact", "Home", FormMethod.Post,new {@id = "contact-form"})){
+            <p>
+                 @Html.TextBoxFor(m => m.Name, new { placeholder = "Ime", @id = "name" })
+            </p>
+            <p>
+                 @Html.TextBoxFor(m => m.Surname, new { placeholder = "Prezime", @id = "company" })
+            </p>
+            <p>
+                 @Html.TextBoxFor(m => m.Email, new { placeholder = "Email", @id = "email" })
+            </p>
+            <p>
+                 @Html.TextBoxFor(m => m.Phone, new { placeholder = "Broj", @id = "phone" })
+            </p>
+            <p class="full">
+                @Html.TextAreaFor(m => m.Message, new { placeholder = "Poruka", @id = "message" })
+            </p>
+            <p class="full">
+            <button type="submit">Pošalji</button>
+            </p>
+            }
+        </div>
+    </div>
+</div>
+
+
+<section class="team_section layout_padding">
+    <div class="container-fluid">
+        <div class="heading_container heading_center">
+            <h2 class="">
+                Naši <span> mentori </span>
+            </h2>
+        </div>
+
+        <div class="team_container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="~/images/Marko.webp" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Marko
+                            </h5>
+                            <p>
+                                Fullstack developer
+                            </p>
+                        </div>
+                        <div class="social_box">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="~/images/Anđela.jpeg" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Anđela
+                            </h5>
+                            <p>
+                                Marketing Head
+                            </p>
+                        </div>
+                        <div class="social_box">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="~/images/Lea.webp" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Lea
+                            </h5>
+                            <p>
+                                Marketing Head
+                            </p>
+                        </div>
+                        <div class="social_box">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
