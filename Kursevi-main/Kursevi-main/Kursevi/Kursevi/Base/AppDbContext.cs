@@ -1,6 +1,7 @@
 ﻿using Kursevi.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Kursevi.Base
 {
     public class AppDbContext : DbContext
@@ -9,7 +10,7 @@ namespace Kursevi.Base
         {
         }
 
-        public DbSet<Users> Users {  get; set; }
+        public DbSet<Users> Users { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<Module> Modules { get; set; }
@@ -30,7 +31,7 @@ namespace Kursevi.Base
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Course>()
-               .HasKey(sc => new {sc.id_course });
+               .HasKey(sc => new { sc.id_course });
 
             modelBuilder.Entity<Module>()
                 .HasOne(m => m.Course)

@@ -1,4 +1,4 @@
-﻿@model Kursevi.Models.Class
+﻿@model Kursevi.Models.Korisnik
 
 <div class="container">
 
@@ -19,24 +19,24 @@
         <div class="contact">
             <h3>Kontaktirajte nas</h3>
 
-            @using (Html.BeginForm("Contact", "Home", FormMethod.Post,new {@id = "contact-form"})){
+            @using (Html.BeginForm("Team", "Home", FormMethod.Post,new {@id = "contact-form"})){
             <p>
-                 @Html.TextBoxFor(m => m.Name, new { placeholder = "Ime", @id = "name" })
+                 @Html.TextBoxFor(m => m.Ime, new { placeholder = "Ime", @id = "name" })
             </p>
             <p>
-                 @Html.TextBoxFor(m => m.Surname, new { placeholder = "Prezime", @id = "company" })
+                 @Html.TextBoxFor(m => m.Prezime, new { placeholder = "Prezime", @id = "company" })
             </p>
             <p>
                  @Html.TextBoxFor(m => m.Email, new { placeholder = "Email", @id = "email" })
             </p>
             <p>
-                 @Html.TextBoxFor(m => m.Phone, new { placeholder = "Broj", @id = "phone" })
+                 @Html.TextBoxFor(m => m.Prezime, new { placeholder = "Broj", @id = "phone" })
             </p>
             <p class="full">
-                @Html.TextAreaFor(m => m.Message, new { placeholder = "Poruka", @id = "message" })
+                @Html.TextAreaFor(m => m.Poruke, new { placeholder = "Poruka", @id = "message" })
             </p>
             <p class="full">
-            <button type="submit">Pošalji</button>
+                    <button type="button" onclick="submitData()">Pošalji</button>
             </p>
             }
         </div>

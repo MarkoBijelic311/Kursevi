@@ -95,3 +95,57 @@ $(".info-item .btn").click(function(){
     $(target).fadeIn(600);
     
   });
+
+function submitData() {
+    const form = document.getElementById('contact-form');
+
+    const name = form.querySelector('#name').value;
+    const email = form.querySelector('#email').value;
+    const phone = form.querySelector('#phone').value;
+    const message = form.querySelector('#message').value;
+    const surname = form.querySelector('#company').value;
+    const currentDate = new Date().toISOString();
+
+    const korisnikJson = {
+        "Ime": name,
+        "Prezime": surname,
+        "Email": email,
+        "BrojTelefona": phone,
+        "Poruke": [
+            {
+                "SadrzajPoruke": message,
+                "DatumSlanja": "2024-12-17T10:00:00"
+            },
+            {
+                "SadrzajPoruke": "Vaša prijava je uspešna.",
+                "DatumSlanja": "2024-12-17T10:00:00"
+            }
+        ],
+        "PrijaveNaKurseve": [
+            {
+                "KursID": 101,
+                "DatumPrijave": "2024-12-17T10:00:00"
+            },
+            {
+                "KursID": 102, 
+                "DatumPrijave": "2024-12-17T10:00:00"
+            }
+        ]
+    };
+
+
+    fetch('/Home/Team', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(korisnikJson)
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}

@@ -11,8 +11,10 @@ namespace Kursevi
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseMySql("Server=localhost;Database=kursevi;User=root;Password='';",new MySqlServerVersion(new Version(8, 0, 33))));
+            builder.Services.AddDbContext<AppDbContext>(options=>
+            options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),new MySqlServerVersion(new Version(8,0,33))));
+            builder.Services.AddDbContext<AppDbContextV2>(options =>
+            options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnectionV2"), new MySqlServerVersion(new Version(8, 0, 33))));
 
             var app = builder.Build();
 
