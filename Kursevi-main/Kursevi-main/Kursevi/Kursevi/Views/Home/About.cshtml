@@ -1,43 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<div class="color">
+﻿<div class="color">
+
+    <h1 style="color:white;text-align:center;">IZABERI KURS</h1>
     <section class="cards-wrapper">
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+            <a class="card" data-course-id="1" data-course-name="Uvod u programiranje" href="#" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)" onclick="handleCardClick(event)">
                 <div>
                     <h1>Uvod u programiranje</h1>
                     <p>Uvod u programiranje obuhvata osnovne principe kako napisati i izvršiti jednostavne programe. Ovaj korak uključuje upoznavanje sa sintaksom programskih jezika i osnovnim alatima za razvoj softvera.</p>
 
-                    <!-- <div class="tags">
+                   @*  <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+            <a class="card" data-course-id="2" data-course-name="Python za početnike"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')"  onclick="handleCardClick(event)" >
                 <div>
                     <h1>Python za početnike</h1>
                     <p>Python je jednostavan i čitljiv jezik, idealan za početnike koji žele brzo naučiti programiranje. Njegova široka primena uključuje razvoj aplikacija, analizu podataka i automatizaciju zadataka.          </p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div> *@ 
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+            <a class="card" data-course-id="3" data-course-name="Java za početnike"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Java za početnike</h1>
                     <p>Java je robustan jezik, popularan za razvoj aplikacija koje zahtevaju sigurnost i skalabilnost. Idealan je za učenje objektno orijentisanog programiranja kroz primere aplikacija i igara.          </p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div> *@ 
                 </div>
             </a>
         </div>
@@ -46,38 +43,38 @@
 
     <section class="cards-wrapper">
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+            <a class="card" data-course-id="4" data-course-name="C++ za početnike" href="#" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)"  onclick="handleCardClick(event)">
                 <div>
                     <h1>C++ za početnike</h1>
                     <p>C++ je snažan jezik koji kombinuje visoko i niskonivonske mogućnosti programiranja. Koristi se za razvoj softvera gde su brzina i kontrola memorije ključni, poput igara i operativnih sistema.</p>
 
-                    <!-- <div class="tags">
+                    @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+            <a class="card" data-course-id="5" data-course-name="HTML/CSS osnove" href="#"  onclick="handleCardClick(event)">
                 <div>
                     <h1>HTML/CSS osnove</h1>
                     <p>HTML je jezik za strukturu i sadržaj web stranica, dok CSS omogućava stilizaciju i vizuelni izgled. Zajedno čine osnovu za kreiranje modernih, responzivnih web sajtova.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+            <a class="card" data-course-id="6" data-course-name="Osnove AI i ML"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg') "  onclick="handleCardClick(event)">
                 <div>
                     <h1>Osnove AI i ML</h1>
                     <p>Osnove AI i ML obuhvataju upoznavanje sa algoritmima koji omogućavaju računarima da uče i predviđaju rezultate. Ključni koncepti uključuju regresiju, klasifikaciju, klasterovanje i evaluaciju modela.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
@@ -86,38 +83,38 @@
 
     <section class="cards-wrapper">
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+            <a class="card" data-course-id="7" data-course-name="Kreiranje modela u Python-u" href="#" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Kreiranje modela u Python-u</h1>
                     <p>Python je popularan jezik za kreiranje modela AI i ML zbog svoje čitljivosti i bogate kolekcije biblioteka kao što su NumPy, Pandas i Scikit-learn. Proces uključuje pripremu podataka, izbor algoritama i evaluaciju rezultata.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+            <a class="card" data-course-id="8" data-course-name="Rad sa TensorFlow-om i Keras-om"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Rad sa TensorFlow-om i Keras-om</h1>
                     <p>TensorFlow i Keras su moćni alati za izgradnju i treniranje složenih neuronskih mreža. Pružaju jednostavan način za razvoj modela dubokog učenja za zadatke poput prepoznavanja slika i obrade prirodnog jezika.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+            <a class="card" data-course-id="9" data-course-name="Primena AI u stvarnim aplikacijama"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Primena AI u stvarnim aplikacijama</h1>
                     <p>AI se koristi u stvarnim aplikacijama kao što su personalizacija preporuka, autonomna vozila, analiza medicinskih podataka i finansijske prognoze. Ove tehnologije donose efikasnost i inovacije u različite industrije.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
@@ -126,38 +123,38 @@
 
     <section class="cards-wrapper">
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+            <a class="card" data-course-id="10" data-course-name="Natural Language Processing (NLP)"  href="#" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Natural Language Processing (NLP)</h1>
                     <p>NLP omogućava računarima da razumeju i procesuiraju ljudski jezik kroz zadatke poput analize sentimenta, prevođenja i generisanja teksta. Ova oblast koristi modele kao što su BERT i GPT za napredne jezičke aplikacije.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div> *@ 
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+            <a class="card" data-course-id="11" data-course-name="C# i .NET razvoj"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')"  onclick="handleCardClick(event)">
                 <div>
                     <h1>C# i .NET razvoj</h1>
                     <p>C# u kombinaciji sa .NET okruženjem omogućava razvoj skalabilnih desktop, web i mobilnih aplikacija. .NET pruža bogat skup biblioteka i alata za brzu i efikasnu izradu softvera.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div> *@ 
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+            <a class="card" data-course-id="12" data-course-name="Osnove C#"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Osnove C#</h1>
                     <p>C# je moderni, objektno orijentisani jezik koji je jednostavan za učenje i ima široku primenu. Njegova sintaksa je prilagođena za razvoj aplikacija na Windows platformama i integraciju sa .NET ekosistemom.</p>
 
-                    <!-- <div class="tags">
+                    @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
@@ -166,38 +163,38 @@
 
     <section class="cards-wrapper">
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+            <a class="card" data-course-id="13" data-course-name="Java razvoj"  href="#" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Java razvoj</h1>
                     <p>Java je jedan od najpopularnijih jezika za razvoj softverskih aplikacija zbog svoje prenosivosti i sigurnosti. Koristi se u razvoju velikih sistema, mobilnih aplikacija i server-side rešenja.</p>
 
-                    <!-- <div class="tags">
+                    @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+            <a class="card" data-course-id="14" data-course-name="Spring Framework"  href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')"  onclick="handleCardClick(event)">
                 <div>
                     <h1>Spring Framework</h1>
                     <p>Spring Framework je moćan alat za razvoj Java aplikacija, poznat po svojoj fleksibilnosti i modularnom dizajnu. Omogućava efikasnu izgradnju web aplikacija, REST servisa i složenih poslovnih sistema.</p>
 
-                    <!-- <div class="tags">
+                     @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div> *@
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card" href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+            <a class="card" data-course-id="15" data-course-name="C++ za napredne" href="#" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')"  onclick="handleCardClick(event)">
                 <div>
                     <h1>C++ za napredne</h1>
                     <p>Napredno programiranje u C++ uključuje rad sa generičkim programiranjem, višezadaćnim operacijama i optimizacijom performansi. Idealno je za izradu kompleksnih sistema poput igara, simulacija i softvera u ugrađenim sistemima.</p>
 
-                    <!-- <div class="tags">
+                    @* <div class="tags">
                       <div class="tag">HTML</div>
-                    </div> -->
+                    </div>  *@
                 </div>
             </a>
         </div>

@@ -1265,13 +1265,13 @@ a {
  a:hover {
 	 color: #179b77;
 }
- .form {
-	 background: #00204a;
-	 padding: 40px;
-	 max-width: 600px;
-	 margin: 40px auto;
-	 border-radius: 4px;
-	 box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
+.form {
+    background: #00204a;
+    padding: 40px;
+    max-width: 600px; 
+    margin: 0px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
 }
  .tab-group {
 	 list-style: none;

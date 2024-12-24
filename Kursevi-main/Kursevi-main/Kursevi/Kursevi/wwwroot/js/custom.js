@@ -1,4 +1,3 @@
-// to get current year
 function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
@@ -8,7 +7,6 @@ function getYear() {
 getYear();
 
 
-// client section owl carousel
 $(".client_owl-carousel").owlCarousel({
     loop: true,
     margin: 20,
@@ -35,8 +33,6 @@ $(".client_owl-carousel").owlCarousel({
 });
 
 
-
-/** google_map js **/
 function myMap() {
     var mapProp = {
         center: new google.maps.LatLng(40.712775, -74.005973),
@@ -123,11 +119,11 @@ function submitData() {
         ],
         "PrijaveNaKurseve": [
             {
-                "KursID": 101,
+                "KursID": 1,
                 "DatumPrijave": "2024-12-17T10:00:00"
             },
             {
-                "KursID": 102, 
+                "KursID": 2, 
                 "DatumPrijave": "2024-12-17T10:00:00"
             }
         ]
@@ -149,3 +145,32 @@ function submitData() {
             console.error('Error:', error);
         });
 }
+
+function handleCardClick(event) {
+    event.preventDefault();
+    const card = event.target.closest('.card');
+    const courseId = card.getAttribute('data-course-id');
+    const courseName = card.getAttribute('data-course-name');
+
+    const courseData = { CourseId: courseId, Name: courseName};
+
+    fetch('/Home/SendCourse', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(courseData)
+    })
+        .then(response => {
+            if (response.ok) {
+                alert('Kurs je uspesno dodat korisniku');
+            } else {
+                alert('Doslo je do greske pri dodavanju kursa.');
+            }
+        })
+        .catch(error => {
+            console.error('Greska:', error);
+            alert('Doslo je do greske.');
+        });
+}
+
