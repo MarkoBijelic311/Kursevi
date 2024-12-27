@@ -57,17 +57,82 @@
                             <input type="radio" name="Zaposlen" value="true" id="da"> <p class="odg"> Da </p>
                             <input type="radio" name="Zaposlen" value="false" id="ne"><p class="odg">Ne</p>
                         </div>
-                    </div>
-
+                    </div>                    
                     <div class="field-wrap">
                         <label>
                             Postavi lozinku<span class="req">*</span>
                         </label>
                         <input type="password" name="Password" required autocomplete="off" />
                     </div>
-
+                    <div class="field-wrap" style="display: flex; align-items: center;">
+                        <a href="#" style="width:60%;font-size:1.5rem;" onclick="openModal()">Terms of usage</a>
+                        <input type="checkbox" name="Terms" id="terms" required>
+                    </div>
                     <button type="submit" class="button button-block">Uloguj se</button>
                 </form>
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <p>
+                            Politika Čuvanja Podataka u Kompaniji Anmale
+
+                            Kompanija Anmale je lider u oblasti edukacije i profesionalnog razvoja, pružajući kurseve, sertifikate i usluge osmišljene da osnaže pojedince i organizacije. Kao kompanija koja obrađuje veliki obim podataka, posebnu pažnju posvećujemo sigurnosti, privatnosti i pravilnom upravljanju informacijama naših korisnika, partnera i zaposlenih.
+
+                            Naša politika čuvanja podataka temelji se na međunarodnim standardima i zakonodavstvu, uključujući Opštu uredbu o zaštiti podataka (GDPR), ISO 27001 standard za upravljanje bezbednošću informacija i lokalne propise o zaštiti podataka.
+
+                            Podaci koje prikupljamo i čuvamo
+                            1. Podaci o korisnicima:
+                            Lični podaci: Ime, prezime, email adresa, broj telefona i druge informacije potrebne za registraciju na platformi.
+                            Podaci o aktivnostima: Istorija kurseva, rezultati testova, sertifikati, kao i povratne informacije i ocene.
+                            Finansijski podaci: Informacije o transakcijama u vezi s plaćanjem kurseva, uključujući ali ne ograničavajući se na informacije o karticama (usklađene s PCI DSS standardom).
+                            2. Podaci o partnerima:
+                            Kontakt informacije (email, telefonski broj).
+                            Ugovori o saradnji, ponude i poslovna dokumentacija.
+                            Informacije o poslovnim aktivnostima, poput broja polaznika koji koriste njihove usluge.
+                            3. Podaci o zaposlenima:
+                            Lični podaci (ime, prezime, JMBG, adresa).
+                            Radni dosije, uključujući ugovore o radu, ocene učinka i informacije o stručnim obukama.
+                            Pristupni podaci za sisteme i evidencije prisustva.
+                            Načini čuvanja i upravljanja podacima
+                            1. Tehnička zaštita:
+                            Serveri visoke sigurnosti: Svi podaci se čuvaju na serverima zaštićenim najsavremenijom enkripcijom (AES-256) i višeslojnim zaštitnim zidovima.
+                            Backup podataka: Redovne rezervne kopije podataka obavljaju se svakodnevno i čuvaju na odvojenim sigurnosnim lokacijama.
+                            Kontrola pristupa: Pristup podacima imaju samo ovlašćeni zaposleni putem dvostruke autentifikacije (2FA) i sigurnosnih tokena.
+                            2. Proceduralna zaštita:
+                            Redovna obuka zaposlenih o bezbednosti podataka i upravljanju informacijama.
+                            Implementacija politike čistog stola kako bi se smanjio rizik od neovlašćenog pristupa papirnoj dokumentaciji.
+                            Periodične provere sigurnosti i revizije sistema od strane eksternih stručnjaka.
+                            Licenciranje, sertifikati i standardi
+                            Kompanija Anmale se ponosi svojim licencama i sertifikatima, koji potvrđuju našu posvećenost kvalitetu i bezbednosti:
+
+                            ISO 9001: Sertifikat za sistem upravljanja kvalitetom, koji garantuje da naši procesi zadovoljavaju najviše standarde u edukaciji.
+                            ISO 27001: Sertifikat za upravljanje informacijama, koji potvrđuje da čuvamo podatke u skladu sa najvišim bezbednosnim standardima.
+                            PCI DSS: Sertifikacija za bezbednost u obradi finansijskih transakcija.
+                            Akreditacija za izdavanje međunarodno priznatih sertifikata poput Microsoft Certified Educator, AWS Certified Instructor, i Scrum Master Accredited Certificate.
+                            Prava korisnika i transparentnost
+                            1. Prava korisnika u vezi sa podacima:
+                            Korisnicima omogućavamo:
+
+                            Pristup svim informacijama koje čuvamo o njima.
+                            Pravo na ispravku netačnih podataka.
+                            Pravo na brisanje podataka (pravo na zaborav) u skladu sa važećim zakonodavstvom.
+                            Pravo na prenosivost podataka – mogućnost da preuzmu svoje podatke u strukturisanom formatu.
+                            2. Transparentnost u obradi podataka:
+                            Korisnicima pružamo jasne informacije o tome kako se njihovi podaci koriste, uključujući:
+
+                            Svrhu prikupljanja podataka (registracija, sertifikacija, prilagođene preporuke).
+                            Kategorije trećih strana s kojima delimo podatke, kao što su akreditovane organizacije za sertifikaciju.
+                            Naša posvećenost bezbednosti i budući koraci
+                            Kompanija Anmale se stalno usavršava kako bi unapredila sigurnost podataka i iskustvo svojih korisnika. Naši planovi za budućnost uključuju:
+
+                            Implementaciju veštačke inteligencije za automatsku detekciju potencijalnih pretnji podacima.
+                            Uvođenje blockchain tehnologije za sigurniju evidenciju sertifikata.
+                            Redovno usklađivanje sa svim novim zakonodavnim propisima o zaštiti podataka.
+                            Sa ovim pristupom, Anmale garantuje sigurnost, profesionalnost i poverenje svojih korisnika, čineći naše usluge izuzetnim i prepoznatljivim na tržištu.
+                        </p>
+                    </div>
+                </div>
 
 
         </div>

@@ -165,7 +165,7 @@ function handleCardClick(event) {
             if (response.ok) {
                 alert('Kurs je uspesno dodat korisniku');
             } else {
-                alert('Doslo je do greske pri dodavanju kursa.');
+                alert('Vi vec posedujete ovaj kurs!');
             }
         })
         .catch(error => {
@@ -173,4 +173,19 @@ function handleCardClick(event) {
             alert('Doslo je do greske.');
         });
 }
+function openModal() {
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+window.onclick = function (event) {
+    const modal = document.getElementById("modal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
 
